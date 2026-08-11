@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cendric</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Cendric</h2>
+          </div>
+          <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active"
+            ><i class="fa-solid fa-house"></i> Dashboard</a
+          >
+          <a href="#"><i class="fa-solid fa-user"></i> Budget</a>
+          <a href="#"><i class="fa-solid fa-shopping-cart"></i> Transactions</a>
+          <a href="#"><i class="fa-solid fa-chart-line"></i> Add Expense</a>
+          <a href="#"><i class="fa-solid fa-box"></i> analytics</a>
+          <a href="#"><i class="fa-solid fa-plus"></i> Add Product</a>
+          <a href="#"><i class="fa-solid fa-plus"></i> Profile</a>
+          <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+          <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <main>
+        <div class="main-top">
+          <span id="menu-btn"><i class="fa-solid fa-bars"></i></span>
+          <h1>Dashboard</h1>
+          <div class="date">
+            <input type="date" />
+          </div>
+        </div>
+        <h2>Good Morning, <b>User Name</b></h2>
+
+        <!-- INSIGHTS -->
+        <div class="insight">
+          <div class="sales">
+            <span class="material-symbols-outlined">analytics</span>
+            <div class="middle">
+              <div>
+                <h3>Total Balance</h3>
+                <h1>$85,000</h1>
+                <small>Last 24 hours</small>
+              </div>
+              <div class="progress">
+                <svg viewBox="0 0 70 70">
+                  <circle class="bg" cx="35" cy="35" r="30"></circle>
+                  <circle
+                    class="progress-ring sales-ring"
+                    cx="35"
+                    cy="35"
+                    r="30"
+                  ></circle>
+                </svg>
+                <div class="number">81%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expense">
+            <span class="material-symbols-outlined">receipt_long</span>
+            <div class="middle">
+              <div>
+                <h3>Total Expense</h3>
+                <h1>$15,024</h1>
+                <small>Last 24 hours</small>
+              </div>
+              <div class="progress">
+                <svg viewBox="0 0 70 70">
+                  <circle class="bg" cx="35" cy="35" r="30"></circle>
+                  <circle
+                    class="progress-ring expense-ring"
+                    cx="35"
+                    cy="35"
+                    r="30"
+                  ></circle>
+                </svg>
+                <div class="number">46%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="income">
+            <span class="material-symbols-outlined">payments</span>
+            <div class="middle">
+              <div>
+                <h3>Total Income</h3>
+                <h1>$10,024</h1>
+                <small>Last 24 hours</small>
+              </div>
+              <div class="progress">
+                <svg viewBox="0 0 70 70">
+                  <circle class="bg" cx="35" cy="35" r="30"></circle>
+                  <circle
+                    class="progress-ring income-ring"
+                    cx="35"
+                    cy="35"
+                    r="30"
+                  ></circle>
+                </svg>
+                <div class="number">79%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECENT Transaction -->
+        <div class="recent-order">
+          <h2>Recent Transactions</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>xxxxxxxxxxx</td>
+                <td>85631</td>
+                <td>Due</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><a href="#" class="details">Details</a></td>
+              </tr>
+              <tr>
+                <td>xxxxxxxxxxx</td>
+                <td>85632</td>
+                <td>Paid</td>
+                <td><span class="status completed">Completed</span></td>
+                <td><a href="#" class="details">Details</a></td>
+              </tr>
+              <tr>
+                <td>xxxxxxxxxxx</td>
+                <td>85633</td>
+                <td>Due</td>
+                <td><span class="status failed">Failed</span></td>
+                <td><a href="#" class="details">Details</a></td>
+              </tr>
+              <tr>
+                <td>xxxxxxxxxxx</td>
+                <td>85634</td>
+                <td>Paid</td>
+                <td><span class="status completed">Completed</span></td>
+                <td><a href="#" class="details">Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="recent-order">
+          <h2>Expense Categories</h2>
+          <p>Updating.............</p>
+        </div>
+      </main>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="right">
+        <div class="right-top">
+          <div class="theme-toggler">
+            <span class="material-symbols-outlined active" id="light-icon"
+              >light_mode</span
+            >
+            <span class="material-symbols-outlined" id="dark-icon"
+              >mode_night</span
+            >
+          </div>
+
+          <div class="profile">
+            <div class="profile-info">
+              <p>Hey, <b>User Name</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="images/profile.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-notification">
+          <h2>Recent Notification 🔔</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile.jpg" />
+              </div>
+              <div class="message">
+                <p><b>Name 1</b> message..................................</p>
+                <small>2 Minutes Ago</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile.jpg" />
+              </div>
+              <div class="message">
+                <p><b>Name 2</b> message..................................</p>
+                <small>15 Minutes Ago</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/profile.jpg" />
+              </div>
+              <div class="message">
+                <p><b>Name 3</b>message..................................</p>
+                <small>1 Hour Ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Cendric</p>
+    </footer>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
