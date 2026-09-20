@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --sidebar-bg: #0B0F1A;
+  --sidebar-text: #94a3b8;
+  --sidebar-text-active: #ffffff;
+  --accent: #6D5AE6;
+  --accent-hover: #5b49d4;
+  --accent-light: rgba(109, 90, 230, 0.15);
+  --success: #10b981;
+  --danger: #f43f5e;
+  --card-bg: #ffffff;
+  --main-bg: #f1f5f9;
+  --border: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --input-bg: #ffffff;
+  --chat-assistant-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --sidebar-bg: #070A12;
+  --sidebar-text: #64748b;
+  --sidebar-text-active: #ffffff;
+  --card-bg: #1e293b;
+  --main-bg: #0f172a;
+  --border: #334155;
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --input-bg: #1e293b;
+  --chat-assistant-bg: #1e293b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 99px; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.animate-fade-in  { animation: fadeIn  0.3s ease both; }
+.animate-slide-in { animation: slideIn 0.3s ease both; }
+
+/* Typing dots */
+.typing-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--sidebar-text);
+  animation: pulse-dot 1.2s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
