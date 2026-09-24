@@ -4,6 +4,8 @@ Project Proposal : [PROJECT.PROPOSAL.pdf](https://github.com/user-attachments/fi
 
 Figma Link: [Cendric](https://www.figma.com/proto/4R5IhXtlEonKqhfDQNdYZ3/Cendric-Web-Application--Project?node-id=2-6&t=qV93CDvL02Of5qBv-1)
 
+Demo Video :[Watch the project demo on YouTube](https://youtu.be/f9sy1oKe73g)
+
 
 An intelligent full-stack web application designed to help modern digital freelancers **manage, visualize, and analyze their financial activities** while providing a context-aware AI assistant for **localized financial and compliance guidance**.
 
