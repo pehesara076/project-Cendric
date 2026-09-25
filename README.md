@@ -4,6 +4,14 @@ Cendric is an AI-powered financial management and real-time tax intelligence pla
 
 ---
 
+
+Project Proposal : [PROJECT.PROPOSAL.pdf](https://github.com/user-attachments/files/30942381/PROJECT.PROPOSAL.pdf)
+
+Figma Link: [Cendric](https://www.figma.com/proto/4R5IhXtlEonKqhfDQNdYZ3/Cendric-Web-Application--Project?node-id=2-6&t=qV93CDvL02Of5qBv-1)
+
+Demo Video :[Watch the project demo on YouTube](https://youtu.be/f9sy1oKe73g)
+
+
 ## 📁 Repository & Architecture Layout
 
 ```
@@ -115,3 +123,4 @@ The project is pre-configured for zero-config deployments on **Railway**, **Rend
 - **Build Command**: `cd server && npm install`
 - **Start Command**: `node server/server.js` (or `npm start`)
 - **Live Production URL**: [https://projectcendric-production.up.railway.app](https://projectcendric-production.up.railway.app)
+
